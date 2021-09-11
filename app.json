@@ -1,0 +1,8 @@
+{
+  "name": "PlantAppExploration",
+  "displayName": "PlantAppExploration",
+  "expo": {
+    "sdkVersion": "42.0.0",
+    "name": "PlantAppExploration"
+  }
+}

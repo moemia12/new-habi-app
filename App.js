@@ -4,7 +4,7 @@ import { NavigationContainer, DefaultTheme } from "@react-navigation/native";
 import { useFonts } from 'expo-font'
 
 // screens
-import { PlantDetail, TakeAction } from "./screens/";
+import { PlantDetail } from "./screens/";
 // extra screens
 import Tabs from "./navigation/tabs";
 
@@ -24,7 +24,9 @@ const App = () => {
         <NavigationContainer theme={theme}>
             <Stack.Navigator
                 screenOptions={{
-                    headerShown: false
+                    headerShown: false,
+                    gestureEnabled: 'true',
+                    gestureDirection: 'horizontal'
                 }}
                 initialRouteName={'Home'}
             >
@@ -33,7 +35,7 @@ const App = () => {
 
                 {/* Screens */}
                 <Stack.Screen name="PlantDetail" component={PlantDetail} options={{ headerShown: false }} />
-                <Stack.Screen name="TakeAction" component={TakeAction} />
+                
             </Stack.Navigator>
         </NavigationContainer>
     );
